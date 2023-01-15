@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Seymour+One&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+#root {
+  background: linear-gradient(to bottom, #9a67ea, #04d4c3);
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.container__h1 {
+  color: #fafafb;
+  width: 10em;
+  padding-bottom: 0.5em;
+}
+.container__span {
+  padding-bottom: 0.5em;
+  color: #fafafb;
+}
+
+.date {
+  color: #fafafb;
+  padding: 5em 0 2em 0;
+}
+
+.addTask {
+  width: 20em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #fafafb;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.addTask__input {
+  width: 100%;
+  height: 100%;
+  border-radius: 2em;
+  padding: 1em;
+  border: none;
+}
+.addTask__input:focus {
+  outline-style: none;
+}
+.addTask__i {
+  font-size: 2em;
+  color: #9a67ea;
+  padding-right: 0.5em;
+}
+
+.taskList {
+  width: 20em;
+}
+.taskList__h3 {
+  color: #fafafb;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.taskList__ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.taskList__li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-radius: 50px;
+  width: 20em;
+  padding: 0.5em;
+  list-style: none;
+  background: linear-gradient(to bottom, #2c7b90, #2a73c2);
+  margin-bottom: 1em;
+}
+.taskList__p {
+  color: #fafafb;
+}
+.taskList__p--lineThrough {
+  color: #04d4c3;
+  text-decoration: line-through;
+  font-weight: 600;
+}
+.taskList__i {
+  font-size: 1.5em;
+  color: #fafafb;
+  padding: 0.2em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.taskList__i:hover {
+  color: #04d4c3;
+  transition: 0.5s;
+}
+
+/*# sourceMappingURL=styles.css.map */

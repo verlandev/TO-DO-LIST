@@ -5,29 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="./index.js" defer></script>
     <title>TO DO LIST</title>
 </head>
 <body>
-    <div class="container">
-        <div class="profile">
-            <div id="date"></div>
-            <h1 class="container__h1">Hola</h1>
-            <span class="containe__span">A cumplir tus metas</span>
-        </div>
-        <div class="addTask">
-            <input type="text" class="addTask__input" id="addTask__input" placeholder="Agrega tu tarea">
-            <i id="EnterButton" class="fas fa-plus-circle"></i>
-        </div>
-        <div class="taskList">
-            <h3 class="taskList__h3">Estas son tus tareas pendientes</h3>
-            <ul class="taskList__ul" id="taskList__ul">
-                <li class="taskList__li">
-                    <i class="far fa-circle co" data="done" id="0"></i>
-                    <p class="taskList__p">Haz tu tarea</p>
-                    <i class=" fas fa-trash de" data-="remove" id="0"></i>
-                </li>
-            </ul>
+    <div id="root">
+        <div class="container">
+            <div class="profile">
+                <div id="date" class="date">15 de enero</div>
+                <h1 class="container__h1">Hola</h1>
+                <span class="container__span">A cumplir tus metas</span>
+            </div>
+            <div class="addTask">
+                <input type="text" class="addTask__input" id="addTask__input" placeholder="Agrega tu tarea">
+                <i id="EnterButton" class="fas fa-plus-circle addTask__i"></i>
+            </div>
+            <div class="taskList">
+                <h3 class="taskList__h3">Estas son tus tareas pendientes</h3>
+                <ul class="taskList__ul" id="taskList__ul">
+                    <!-- <li class="taskList__li" id="taskList__li">
+                        <i class="far fa-circle co taskList__i" data="done" id="0"></i>
+                        <p class="taskList__p" id="taskList__p"></p>
+                        <i class=" fas fa-trash de taskList__i" data-="remove" id="0"></i>
+                    </li> -->
+                </ul>
+            </div>
         </div>
     </div>
 </body>
